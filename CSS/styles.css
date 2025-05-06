@@ -1,0 +1,501 @@
+/* play-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v47-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v47-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v47-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-brand-ligt: #2b7fff;
+  --color-brand-dark: #011c44;
+  --color-brand-white: #ffffff;
+}
+
+/* Base */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-brand-white);
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.social-header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.icon-social {
+  fill: var(--color-brand-dark);
+}
+
+/* Button */
+.button {
+  padding: 16px 32px;
+  color: var(--color-brand-white);
+  background: var(--color-brand-ligt);
+  border: 2px solid var(--color-brand-ligt);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+
+.button:hover {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid var(--color-brand-ligt);
+}
+
+/* Link */
+.header-link {
+  color: var(--color-brand-dark);
+  font-weight: 700;
+  line-height: 1.16;
+  text-decoration: none;
+}
+
+.social {
+  color: var(--color-brand-dark);
+}
+
+.header-link:hover {
+  color: var(--color-brand-ligt);
+}
+
+/* Hero section */
+.hero-section {
+  background-image: linear-gradient(
+    89.38deg,
+    var(--color-brand-white) 30.62%,
+    rgba(255, 255, 255, 0.850898) 41.31%,
+    rgba(255, 255, 255, 0.193204) 58.65%,
+    rgba(255, 255, 255, 0) 72.78%
+  ); /* це я спробував сам, хоча в уроці ще не робили і в мене не застосувлось*/
+  padding: 172px;
+  background-image: url('/Images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.hero-container {
+  align-items: center;
+  margin-left: 205px;
+}
+
+.section-title-hero {
+  margin-top: 44px;
+  margin-bottom: 0;
+  color: var(--color-brand-dark);
+  line-height: 1.16;
+}
+
+.hero-title {
+  max-width: 529px;
+  margin-bottom: 0;
+  padding: 0px 0px 0px 0px;
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.section-gray {
+  margin-bottom: 0;
+  padding-top: 14px;
+  max-width: 238px;
+  max-height: 14px;
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* About us-section */
+.about-us-list {
+  display: flex;
+  gap: 32px;
+}
+
+.about-us-item {
+  max-width: 709px;
+  max-height: 456px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 41px;
+}
+
+.section-for-padding-ind {
+  padding-bottom: 0;
+  padding-top: 131.14px;
+}
+
+.section-title-about-us {
+  max-width: 529px;
+  margin: 40px 0 40px 0;
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700px;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.section-title-about-us .accent {
+  color: var(--color-brand-dark);
+}
+
+.section-title-about-us-beauty {
+  margin-bottom: 40px;
+  max-width: 709px;
+  color: var(--color-brand-dark);
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.section-title-about-us-beauty:last-child {
+  margin-bottom: 199px;
+}
+
+.section-title-about-us-beauty .bold {
+  font-weight: bold;
+}
+
+.section-title-about-us-beauty .capitalize {
+  text-transform: capitalize;
+}
+
+.woman-face {
+  display: grid;
+  gap: 40px;
+}
+
+.face-before {
+  box-shadow: (0px 4px 4px rgba(168, 198, 245, 0.2)); /*--не застосувалось знайти причину чому--*/
+  background-color: #d9d9d9;
+  margin: 1px 168px 0 4px;
+  border-radius: 50%;
+}
+
+.face-after {
+  box-shadow: (0px 4px 4px rgba(168, 198, 245, 0.2)); /*--не застосувалось знайти причину чому--*/
+  background-color: #d9d9d9;
+  margin-left: 164px;
+  border-radius: 50%;
+}
+
+/* Why we are-section */
+.section-title-why-we-are {
+  text-align: center;
+  max-width: 432px;
+  margin: 0 auto 130.5px;
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.section-title-why-we-are .accent {
+  color: var(--color-brand-dark);
+}
+
+.section-title-card-why {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
+
+.section-title-card {
+  box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
+  background-color: var(--color-brand-white);
+  padding: 85px 32px 24px 32px;
+  border: 1px solid lightgray; /* remowe*/
+  border-radius: 32px;
+  max-width: 316px;
+}
+
+.icon-why {
+  fill: var(--color-brand-ligt);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title-why-we-are-text {
+  color: #000000;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Our treatment-section */
+.out-rteatment-container {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.section-title-our-treatment {
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.section-title-our-treatment .accent {
+  color: var(--color-brand-dark);
+}
+
+.our-treatment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--color-brand-white);
+  border: 1px solid var(--color-brand-dark);
+  cursor: pointer;
+}
+
+.our-treatment-button:hover {
+  background-color: var(--color-brand-ligt);
+  border: 1px solid var(--color-brand-white);
+}
+
+.our-treatment-button:hover .our-treatment-icon-arrow {
+  fill: var(--color-brand-white);
+}
+
+.our-treatment-icon-arrow {
+  fill: var(--color-brand-dark);
+}
+
+.treatment-list {
+  display: flex;
+  gap: 16px;
+}
+
+.treatment-pict {
+  height: 345;
+  padding: 37px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--color-brand-dark) 101.39%
+  );
+  border: 1px solid lightgray; /* remove*/
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.right-treatment {
+  color: var(--color-brand-white);
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+/* Contacts-section */
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  border-radius: 32px;
+}
+
+.section-title-contacts {
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.section-title-contacts .accent {
+  color: var(--color-brand-dark);
+}
+
+.section-title-contacts-title {
+  color: var(--color-brand-white);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.section-title-contacts-title .accent {
+  color: var(--color-brand-ligt);
+}
+
+/* Footer link */
+.footer {
+  padding: 56px, 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.footer-link {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+}
+
+.address-link {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-social {
+  fill: var(--color-brand-white);
+}
+
+.address-link-confi {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.8;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-copyright {
+  color: #747272;
+  font-size: 13px;
+  line-height: 1.15;
+  font-style: normal;
+}
+
+.footer {
+  background-image: url('/Images/footer-background.png');
+  background-color: var(--color-brand-dark);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
