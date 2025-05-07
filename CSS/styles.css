@@ -128,6 +128,9 @@ a {
   cursor: pointer;
   font-weight: 600;
   font-family: 'Roboto';
+  width: 223px;
+  height: 57px;
+  font-size: 18px;
 }
 
 .button:hover {
@@ -170,7 +173,6 @@ a {
 
 .hero-container {
   align-items: center;
-  margin-left: 205px;
 }
 
 .section-title-hero {
@@ -199,7 +201,8 @@ a {
   max-height: 14px;
   color: #4a4a4a;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* About us-section */
