@@ -220,7 +220,7 @@ a {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
-  padding: 41px;
+  padding: 32px 70px 32px 67px;
 }
 
 .section-for-padding-ind {
@@ -496,9 +496,19 @@ a {
 }
 
 .footer {
+  position: relative;
   background-image: url('/Images/footer-background.png');
   background-color: var(--color-brand-dark);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer::after {
+  position: absolute;
+  background-image: url('../Images/decor-bottles.png');
+  background-repeat: no-repeat;
+  width: 278px;
+  height: 213px;
+  right: 0;
 }
