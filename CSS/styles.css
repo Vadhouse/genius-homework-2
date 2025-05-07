@@ -436,7 +436,13 @@ a {
 
 /* Footer link */
 .footer {
-  padding: 56px, 0;
+  padding: 56px 100px;
+  position: relative;
+  background-image: url('/Images/footer-background.png');
+  background-color: var(--color-brand-dark);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-container {
@@ -495,15 +501,6 @@ a {
   font-style: normal;
 }
 
-.footer {
-  position: relative;
-  background-image: url('/Images/footer-background.png');
-  background-color: var(--color-brand-dark);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .footer::after {
   position: absolute;
   background-image: url('../Images/decor-bottles.png');
@@ -511,4 +508,37 @@ a {
   width: 278px;
   height: 213px;
   right: 0;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 28, 68, 0.725825);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-brand-dark);
+  border-radius: 48px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
 }
